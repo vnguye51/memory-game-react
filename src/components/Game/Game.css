@@ -1,0 +1,30 @@
+.flex-container{
+    margin: 20px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: seagreen 4px solid;
+    background-color:seashell;
+  }
+
+#banner{
+    color: black;
+    font-size: 40px;
+    background-color:seashell;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    padding: 20px;
+    border: seagreen 2px solid;
+    margin: 20px 10%;
+
+}
+
+button{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: solid 1px rgba(0, 0, 0, 0.226);
+    font-size: 40px;
+}
+button:hover{
+    background-color: rgb(22, 78, 24)
+}
