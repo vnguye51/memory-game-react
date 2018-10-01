@@ -16,5 +16,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://vnguye51.github.io/memorization-game-react"
+  "homepage": "https://vnguye51.github.io/memory-game-react"
 }
