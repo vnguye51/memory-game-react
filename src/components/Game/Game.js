@@ -15,7 +15,7 @@ class Game extends Component{
     }
 
     checkClicked(id){
-        if(!this.state.win){
+        if(this.state.win !== false && this.state.win !== true){
             if(this.state.clicked.includes(id)){
                 this.setState({win: false})
             }
@@ -49,10 +49,10 @@ class Game extends Component{
 
     renderBanner(){
         if(this.state.win === true){
-            return <Banner content="YOU WIN!" score = {(cards.length - this.state.clicked.length) + " LEFT!"} /> 
+            return <Banner content="YOU WIN!" /> 
         }
         else if(this.state.win === false){
-            return <Banner lose={true} content="YOU LOSE!" score = {(cards.length - this.state.clicked.length) + " LEFT!" } />
+            return <Banner lose={true} content="YOU LOSE!" score = {(cards.length - this.state.clicked.length) + " LEFT!" } reset={()=>this.setState({clicked:[],win:null})}/>
         }
         else{
             return <Banner score = {(cards.length - this.state.clicked.length) + " LEFT!"}  />

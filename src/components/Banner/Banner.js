@@ -4,13 +4,13 @@ import Reset from '../Reset/Reset'
 class Banner extends Component{
     renderButton(){
         if(this.props.lose){
-            return <Reset />
+            return <Reset reset = {this.props.reset}/>
         }
     }
     render(){
       return(
         <div id = 'banner'>
-            <div>Score: {this.props.score}</div>
+            <div>{this.props.score}</div>
             {this.props.content}
             {this.renderButton()}
         </div>
